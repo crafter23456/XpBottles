@@ -1,4 +1,4 @@
-package me.codedred.xpbottles.models;
+package me.codedred.xpbottles.versions;
 
 import me.codedred.xpbottles.Main;
 import org.bukkit.Material;

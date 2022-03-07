@@ -2,6 +2,7 @@ package me.codedred.xpbottles;
 
 import java.lang.reflect.Method;
 
+import me.codedred.xpbottles.versions.ExpBottle;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -24,7 +25,6 @@ import me.codedred.xpbottles.listeners.ThrownBottle;
 import me.codedred.xpbottles.listeners.VanillaBottle;
 import me.codedred.xpbottles.models.ExperienceManager;
 import me.codedred.xpbottles.models.MoneyAPI;
-import me.codedred.xpbottles.models.ExpBottle;
 
 public class Main extends JavaPlugin {
 	

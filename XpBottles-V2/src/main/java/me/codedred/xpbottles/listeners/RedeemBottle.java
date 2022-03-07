@@ -19,19 +19,18 @@ public class RedeemBottle implements Listener {
 	public RedeemBottle(Main plugin) {
 		this.plugin = plugin;
 	}
-	
+
 	@EventHandler
 	public void redeem(BottleClickEvent event) {
 		int value = plugin.bottle.getExpAmount(event.getBottle());
 		int amount = event.getBottle().getAmount();
-		
+
 		Player player = event.getPlayer();
-		
+
 		//plugin.manager.setTotalExperience(player, plugin.manager.getTotalExperience(player) + value);
-	    for (String message : plugin.msg.getConfig().getStringList("messages.redeem")) 
+	    for (String message : plugin.msg.getConfig().getStringList("messages.redeem"))
 	    	player.sendMessage(plugin.f(message.replace("%exp%", Integer.toString(value))));
-	    
-	    
+
 	    if (amount > 1 )
 	    	event.getBottle().setAmount(amount - 1);
 	    else  {
@@ -40,6 +39,7 @@ public class RedeemBottle implements Listener {
 	    	else
 	    		player.getInventory().removeItem(new ItemStack[] { event.getBottle() });
 	    }
+
 	    player.updateInventory();
 	    if (plugin.getConfig().getBoolean("redeem-sound.enabled") == true) {
 			player.playSound(player.getLocation(), Sound.valueOf(plugin.getConfig().getString("redeem-sound.sound")), 3.0F, 1.0F);	

@@ -38,8 +38,6 @@ public class ThrownBottle implements Listener {
 	@EventHandler
 	public void normalBottle(ExpBottleEvent event) {
 		event.setExperience(0);
-		
-
 	}
 
 }

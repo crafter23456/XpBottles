@@ -1,19 +1,16 @@
 name: XpBottles
 main: me.codedred.xpbottles.Main
-# Author set to 'Cmaaxx' for Metric purposes.
-author: Cmaaxx
 authors: [CodedRed, Cmaaxx]
-version: 1.2.2
+version: 1.4.0
 api-version: 1.13
-loadbefore: [Essentials]
 softdepend: [Vault]
 
 commands:
   exp:
     description: Allows you to withdraw exp into an exp bottle!
-    usage: /Exp
+    usage: /exp
   xp:
     description: Allows you to use admin exp commands!
-    usage: /Xp
+    usage: /xp
 
   
